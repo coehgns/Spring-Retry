@@ -22,7 +22,7 @@ class CreateBoardService(
     @Retryable(
         maxAttempts = 3,
         backoff = Backoff(delay = 1000),
-        include = [RuntimeException::class],
+        value = [RuntimeException::class],
         recover = "recover"
     )
     @Transactional
