@@ -26,6 +26,7 @@ repositories {
 }
 
 dependencies {
+    implementation("org.springframework:spring-aspects")
     implementation("org.springframework.retry:spring-retry")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
